@@ -1,0 +1,35 @@
+body{
+    background-color:burlywood;
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+.container{
+    background-color:cornflowerblue;
+    font-family: cursive;
+    border: 4px black solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+}
+textarea{
+    border: 2px black solid;
+    border-radius: 8px;
+    width: 50%;
+}
+#encode:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px;
+}
+#decode:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px;
+}
+button{
+    border: 3px solid lightblue;
+    border-radius: 4px;
+    margin: 0 25px;
+    padding: 4px;
+}

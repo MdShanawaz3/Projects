@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Font Converter</title>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <h1><u>Font Converter.</u></h1>
+            <form onsubmit="changeFont(event)">
+                <p><label for="headlable">Enter Your Text Here : </label></p>
+                <textarea id="textinput" name="textinput" rows="5" cols="50"
+                    placeholder="Enter Your Text Here"></textarea>
+                <br>
+                <label for="Fonts">Choose Your Font: </label>
+
+                <select name="fonts" id="fonts">
+                    <option value="'Dancing Script', cursive">Dancing Script</option>
+                    <option value="'DynaPuff', cursive">DynaPuff</option>
+                    <option value="'Pacifico', cursive">Pacifico</option>
+                    <option value="'Qwitcher Grypen', cursive">Qwitcher Grypen</option>
+                    <option value="'Silkscreen', cursive">Silkscreen</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br><br>
+            <textarea id="newtext" name="newtext" rows="5" cols="50" readonly></textarea>
+        </div>
+        <footer class="foot">
+            <a href="htts://codeforindia.com" target="_blank">Code For India</a>
+            <br>
+            &copy; Copyrights. All Rights Reserved
+            <!-- <script>document.write(new date().getFullYear());</script> -->
+            <span id="date"></span>
+        </footer>
+</body>
+<script>
+    document.getElementById("date").innerText = new Date().getFullYear();
+    function changeFont(event) {
+        //Prevents the page from Reloading
+        event.preventDefault();
+
+        //Getting Input from User Text Area
+        let text = document.getElementById("textinput").value;
+        console.log(text);
+
+        //Getting Font Name form Select Drop Down Menu
+        let fontname = document.getElementById("fonts").value;
+        console.log(fontname);
+
+        //This is the Element that has the Output Text Area
+        let formattedText = document.getElementById("newtext");
+
+        console.log(formattedText);
+        //Changing Text of Output Text Area
+        formattedText.innerText = text;
+
+        //adding a font Style for the Output Text Area Tag
+        formattedText.style.fontFamily = fontname;
+    }
+</script>
+</center>
+
+</html>

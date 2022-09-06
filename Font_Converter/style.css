@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=DynaPuff&family=Pacifico&family=Qwitcher+Grypen&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: blue;
+    color: white;
+    font-family: "'DynaPuff',cursive";
+}
+
+.container {
+    background-color: aqua;
+    border: 2px black solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot {
+    margin: 0;
+    padding: 10px;
+    bottom: 0;
+
+    background-color: blue;
+    color: white;
+
+}
+
+input[type="submit"] {
+    border-radius: 4px;
+    padding: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: cyan;
+    transform: scale(1.1);
+    border: 2px solid blue;
+
+}
+
+textarea {
+    width: 279px;
+    height: 133px;
+    border: 3px solid blue;
+
+}
+
+a {
+    text-decoration: none;
+    color: crimson;
+
+}

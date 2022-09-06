@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Base64 Converter</title>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h1><u>Base64 Converter</u></h1>
+        <p><b>Write the text you want to convert : </b></p>
+        <textarea name="textinput" id="textinput" cols="5" rows="5" placeholder="Enter the text you want to Convert"></textarea><br><br>
+        <div class="class">
+        <button id="encode" type="button" onclick="base64Encoding()">Encode</button>
+        <button id="decode" type="button" onclick="Base64Decoding()">Decode</button>
+    </div><br><br>
+    <textarea name="newtext" id="newtext" cols="5" rows="5" readonly></textarea>
+</div>
+</center>
+<script src = "encoder.js">
+</script>
+<script src = "Decoding1.js">
+</script>
+</body>
+</html>
